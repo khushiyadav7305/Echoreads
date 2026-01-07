@@ -1,0 +1,356 @@
+ .header1{
+    background-color:#1b263b;
+    height: 150px;
+    color: whitesmoke;
+    margin-top: 0em;
+    padding-top: 0px;
+   
+}
+ h1{
+    height: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 135px;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+  }
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    background:whitesmoke;
+    
+    cursor: pointer;
+  }
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+  label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left: 195px;
+  }
+  #check:checked ~ section{
+    margin-left: 250px;
+  }
+  section{
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  }
+ #myid{
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+ }
+.body1{
+    background-color:#d1dbe4;
+    height: 480px;
+}
+
+.footer{
+    background-color:#7593af;
+    height: 300px;
+}
+.card{
+     height: 380px;
+     width: 200px;
+     border: 2px solid black;
+     display: inline-block;
+     margin:10px;
+     border-radius: 5px 5px 0 0;
+     box-shadow: 2px 4px 8px black;
+     background-color: whitesmoke;
+}
+img{
+    width: 100%;
+}
+.card:hover{
+    box-shadow: 0 8px 16px black;
+}
+.disc{
+    padding: 0 2px 0 2px;
+}
+/*middle part*/
+/* Middle Part */
+
+.body2 {
+  background-color: #d1dbe4;
+  height: 400px;
+}
+
+.pulse {
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(#453b7d , #7b68ee);
+  position: absolute;
+  margin: auto;
+  left: 50px;
+  right: 0;
+  top: 50em;
+  bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallicon {
+  font-size: 4em;
+  color: #d1dbe4;
+  position: relative;
+}
+
+.pulse::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#7b68ee  ;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: pulse 2s ease-in-out infinite;
+}
+.pulse::before{
+  animation:pulse 2s ease-in-out infinite;
+}
+.pulse::after{
+  animation: pulse 2s 1s ease-in-out infinite;
+}
+.pulse:hover {
+  background-color: #2c3e50; /* Darker color on hover */
+  animation: pulse 1s infinite;
+}
+/* Removed ::after pseudo-element */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8); /* Adjusted to avoid smaller circle issue */
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+/* SECOND MIDDLE PART*/
+
+/* Rating Section */
+.rating-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background:#b0c4de;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.book-container {
+  text-align: center;
+}
+
+.book-cover {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.book-author {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Rating Container */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+  color: #ffcc00;
+}
+
+.star:hover ~ .star {
+  color: #ccc;
+}
+
+.rating-display {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+
+/*footer part*/
+
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: whitesmoke;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+/*FORM PART*/
+
