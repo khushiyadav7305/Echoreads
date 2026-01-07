@@ -21,4 +21,8 @@ This project demonstrates **frontend development skills** including responsive d
 
 <img width="1877" height="899" alt="Screenshot 2024-12-09 125404" src="https://github.com/user-attachments/assets/49d587e0-db14-4b41-ab6a-da523ddea697" />
 
+
 <img width="1853" height="770" alt="Screenshot 2026-01-07 103727" src="https://github.com/user-attachments/assets/2b77d116-2782-4549-9628-6a2b2fbcb181" />
+
+
+<img width="1441" height="893" alt="Screenshot 2024-12-09 125420" src="https://github.com/user-attachments/assets/6573f877-d967-414b-87f3-8001e4d77b89" />
